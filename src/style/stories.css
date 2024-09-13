@@ -1,0 +1,140 @@
+/* Stylizacja całej strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Stylizacja kontenera */
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Nagłówek */
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Stylizacja przycisku dodawania nowego story */
+  #addStoryButton {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #addStoryButton:hover {
+    background-color: #45a049;
+  }
+  
+  /* Stylizacja kafelków (kart) stories */
+  #stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .story {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .story:hover {
+    transform: translateY(-5px);
+  }
+  
+  .story h4 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .story p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  /* Przyciski edycji i usunięcia */
+  .story button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-story {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .edit-story:hover {
+    background-color: #1976D2;
+  }
+  
+  .delete-story {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .delete-story:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    #addStoryButton {
+      width: 100%;
+    }
+  
+    #stories {
+      grid-template-columns: 1fr;
+    }
+  
+    .story {
+      padding: 15px;
+    }
+  }
+  #addStoryButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  #addStoryButton:hover {
+    background-color: #45a049;
+  }
+  

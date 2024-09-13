@@ -1,0 +1,156 @@
+/* Ogólny reset stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Kontener strony */
+  .container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Nagłówek */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 28px;
+  }
+  
+  /* Lista zadań */
+  #tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Pojedyncze zadanie */
+  .task {
+    background-color: #fafafa;
+    border-left: 5px solid #007bff;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .task:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .task h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .task p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Stylowanie przycisków */
+  button {
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Stylowanie przycisków edycji i usuwania */
+  .edit-task-button {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .delete-task-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  /* Stylowanie formularza dodawania zadania */
+  #addTaskForm {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  #addTaskForm h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  #addTaskButton {
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+  }
+  
+  #addTaskButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Stylowanie sekcji "No tasks" */
+  #tasks p {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+  }
+  
+  /* Dodatkowe media queries dla responsywności */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .task h4 {
+      font-size: 18px;
+    }
+  
+    .task p {
+      font-size: 12px;
+    }
+  
+    button {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  }
+  

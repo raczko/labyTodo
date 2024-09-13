@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="/src/style/dashstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Projects Dashboard</h1>
+      
+        <div id="projects"></div>
+      
+        <h2>Add New Project</h2>
+        <input type="text" id="newProjectName" placeholder="Project Name" />
+        <input type="text" id="newProjectDescription" placeholder="Project Description" />
+        <button id="addProjectButton">Add Project</button>
+      
+        <h2>Edit Project</h2>
+        <input type="text" id="editProjectName" placeholder="Project Name" />
+        <input type="text" id="editProjectDescription" placeholder="Project Description" />
+        <button id="saveProjectButton">Save Changes</button>
+      
+        <button id="logoutButton">Log Out</button>
+      </div>
+      
+
+  <script type="module" src="/src/dashboard.ts"></script>
+</body>
+</html>

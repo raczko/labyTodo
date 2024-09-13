@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Stories</title>
+  <link rel="stylesheet" href="/src/style/stories.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Add New Story</h2>
+    <input type="text" id="storyName" placeholder="Story Name">
+    <input type="text" id="storyDescription" placeholder="Story Description">
+    
+    <!-- Select priority -->
+    <label for="storyPriority">Priority:</label>
+    <select id="storyPriority">
+      <option value="low">Low</option>
+      <option value="medium" selected>Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <!-- Select status -->
+    <label for="storyStatus">Status:</label>
+    <select id="storyStatus">
+      <option value="todo" selected>To Do</option>
+      <option value="doing">Doing</option>
+      <option value="done">Done</option>
+    </select>
+
+    <button id="addStoryButton" class="btn-blue">Add Story</button>
+
+    <div id="stories"></div> <!-- Miejsce na wyświetlanie stories -->
+
+  </div>
+
+  <script type="module" src="/src/stories.ts"></script>
+</body>
+</html>
